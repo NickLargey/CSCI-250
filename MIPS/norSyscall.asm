@@ -22,8 +22,7 @@ main:
 	li    $a0,    10    # Print a newline
     	li    $v0,    11
    	syscall
-   	#li    $v0,    10    # Exit gracefully
-    	#syscall
+   	
     	
 	lw	$s0,	firstXorVal
 	lw,	$s1,	secondXorVal
@@ -35,3 +34,5 @@ main:
 	
 	syscall
 	
+	li    $v0,    10    # Exit gracefully
+    	syscall

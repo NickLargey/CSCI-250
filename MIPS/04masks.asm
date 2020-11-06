@@ -5,6 +5,9 @@ posValue: 0xffffffc9
 	.text
 
 main:
+	
+	.macro end
+	
 	lw	$s0, fvalue
 	lw	$s1, mask
 	
